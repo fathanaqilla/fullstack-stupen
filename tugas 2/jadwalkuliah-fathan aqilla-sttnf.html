@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 HTML - Jadwal Kuliah</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+            background-color: #ffffff;
+            color: #000;
+        }
+        .identity {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            max-width: 850px;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #7f7f7f;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #7f7f7f;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .day-cell {
+            font-weight: normal;
+        }
+        .left-align {
+            text-align: left;
+        }
+        .footer-row {
+            background-color: #7f7f7f;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Tugas Tabel</h3>
+    <p>Buatlah kode HTML dengan menghasilkan gambar sebagai berikut</p>
+
+    <div class="identity">
+        <p><strong>Nama:</strong> Fathan Aqilla Bestari</p>
+        <p><strong>Kampus:</strong> STT Terpadu Nurul Fikri</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>HARI</th>
+                <th>JAM</th>
+                <th>MATA KULIAH</th>
+                <th>DOSEN</th>
+                <th>RUANG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- SENIN -->
+            <tr>
+                <td rowspan="2" class="day-cell">SENIN</td>
+                <td>08.00 - 10.00</td>
+                <td class="left-align">Kajian Islam</td>
+                <td class="left-align">Ust. Anwar Nashidin, Lc.</td>
+                <td rowspan="2">Ruang Teori</td>
+            </tr>
+            <tr>
+                <td>10.00 - 12.00</td>
+                <td class="left-align">Aplikasi Perkantoran</td>
+                <td class="left-align">Drs. MGS Hendri, M.M</td>
+            </tr>
+
+            <!-- SELASA -->
+            <tr>
+                <td rowspan="2" class="day-cell">SELASA</td>
+                <td>08.00 - 10.00</td>
+                <td class="left-align">Linux Fundamental</td>
+                <td rowspan="2" class="left-align">Henry Saptono, S.Si,M.kom</td>
+                <td rowspan="4">Ruang I</td>
+            </tr>
+            <tr>
+                <td>10.00 - 12.00</td>
+                <td class="left-align">Html, Css & Javascript</td>
+            </tr>
+
+            <!-- RABU -->
+            <tr>
+                <td rowspan="2" class="day-cell">RABU</td>
+                <td>08.00 - 10.00</td>
+                <td class="left-align">Basis Data</td>
+                <td rowspan="2" class="left-align">Sirojul Munir, S.Si. M.Kom</td>
+            </tr>
+            <tr>
+                <td>10.00 - 12.00</td>
+                <td class="left-align">Algoritma dan Pemrograman</td>
+            </tr>
+
+            <!-- KAMIS -->
+            <tr>
+                <td rowspan="2" class="day-cell">KAMIS</td>
+                <td>08.00 - 10.00</td>
+                <td class="left-align">Kewirausahaan & Pengembangan Diri</td>
+                <td class="left-align">Khoirul Umam, S.Pd</td>
+                <td rowspan="2">Ruang Teori</td>
+            </tr>
+            <tr>
+                <td>10.00 - 12.00</td>
+                <td class="left-align">Bahasa Inggris</td>
+                <td class="left-align">Drs. Mahfudz</td>
+            </tr>
+
+            <!-- FOOTER -->
+            <tr>
+                <td colspan="5" class="footer-row">JADWAL DAPAT BERUBAH SEWAKTU-WAKTU</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #0369a1);
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .header {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 45px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: rgba(56, 189, 248, 0.2);
+            border-radius: 50%;
+            right: -70px;
+            top: -100px;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            left: 35%;
+            bottom: -120px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #7dd3fc;
+            margin-bottom: 6px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        p {
+            margin: 6px 0 0;
+            color: #dbeafe;
+            font-size: 14px;
+        }
+
+        .badge {
+            position: relative;
+            z-index: 2;
+            padding: 12px 18px;
+            border: 1px solid rgba(255,255,255,.2);
+            border-radius: 14px;
+            background: rgba(255,255,255,.1);
+            backdrop-filter: blur(10px);
+            font-size: 13px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="content">
+        <div class="label">WEB PROGRAMMING</div>
+        <h1>Informatics Engineering</h1>
+        <p>Student Personal Profile & Learning Space</p>
+    </div>
+
+    <div class="badge">
+        HTML Frame Website
+    </div>
+</div>
+
+</body>
+</html>
