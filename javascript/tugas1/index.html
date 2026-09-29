@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 1 JavaScript</title>
+</head>
+<body>
+
+<script>
+
+function persegiPanjang(panjang,lebar){
+    // Menghitung luas persegi panjang
+    return panjang * lebar;
+}
+
+function bujurSangkar(sisi){
+    // Menghitung luas bujur sangkar
+    return sisi * sisi;
+}
+
+function segitiga(alas,tinggi){
+    // Menghitung luas segitiga
+    return alas * tinggi / 2;
+}
+
+let panjang = 10;
+let lebar = 5;
+let sisi = 7;
+let alas = 8;
+let tinggi = 6;
+
+let hasil1 = persegiPanjang(panjang,lebar);
+let hasil2 = bujurSangkar(sisi);
+let hasil3 = segitiga(alas,tinggi);
+
+console.log("Luas Persegi Panjang : " + hasil1);
+console.log("Luas Bujur Sangkar : " + hasil2);
+console.log("Luas Segitiga : " + hasil3);
+
+document.write("Luas Persegi Panjang = " + hasil1 + "<br>");
+document.write("Luas Bujur Sangkar = " + hasil2 + "<br>");
+document.write("Luas Segitiga = " + hasil3);
+
+</script>
+
+</body>
+</html>
+
