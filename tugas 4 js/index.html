@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Manajemen Transportasi</title>
+</head>
+<body>
+
+<h1>Daftar Pelanggan yang Menyewa Kendaraan</h1
+    >
+
+<script>
+
+class Pelanggan {
+
+    constructor(nama, nomorTelepon) {
+        this.nama = nama;
+        this.nomorTelepon = nomorTelepon;
+        this.kendaraanDisewa = null;
+    }
+
+    // Method untuk mencatat kendaraan yang disewa
+    sewaKendaraan(kendaraan) {
+        this.kendaraanDisewa = kendaraan;
+    }
+
+    // Method untuk menampilkan data pelanggan
+    tampilkanData() {
+        return "<tr>" +
+            "<td>" + this.nama + "</td>" +
+            "<td>" + this.nomorTelepon + "</td>" +
+            "<td>" + this.kendaraanDisewa + "</td>" +
+            "</tr>";
+    }
+}
+
+// Membuat data pelanggan
+let pelanggan1 = new Pelanggan("Lamine Yamal", "081234567890");
+let pelanggan2 = new Pelanggan("Kylian Mbappe", "082345678901");
+
+// Mencatat transaksi penyewaan kendaraan
+pelanggan1.sewaKendaraan("Nissan GTR");
+pelanggan2.sewaKendaraan("Ferrari Testarossa");
+
+// Menampilkan daftar pelanggan
+document.write("<table border='1' cellpadding='8'>");
+
+document.write("<tr>");
+document.write("<th>Nama</th>");
+document.write("<th>Nomor Telepon</th>");
+document.write("<th>Kendaraan Disewa</th>");
+document.write("</tr>");
+
+document.write(pelanggan1.tampilkanData());
+document.write(pelanggan2.tampilkanData());
+
+document.write("</table>");
+
+</script>
+
+</body>
+</html>
